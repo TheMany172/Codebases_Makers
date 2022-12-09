@@ -1,0 +1,10 @@
+{
+  "name": "adamlittle-message-database",
+  "domain": false,
+  "hostname": "adamlittle-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@adamlittle-postgres-password"
+  },
+  "volumes": ["adamlittle_message_database_volume:/var/lib/postgresql/data"]
+}
